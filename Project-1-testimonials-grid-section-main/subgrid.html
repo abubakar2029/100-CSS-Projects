@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #parent {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr 1fr;
+      height: 100vh;
+      grid-template-rows: repeat(3, 1fr);
+    }
+    .card {
+      display: grid;
+      color: white;
+      grid-row: span 3;
+      font-weight: 700;
+      font-size: larger;
+      grid-template-rows: subgrid;
+    }
+    .h {
+      background-color: aqua;
+    }
+    .b {
+      background-color: darkslategrey;
+    }
+    .f{
+        background-color:violet ;
+    }
+  </style>
+  <body>
+    <section id="parent">
+      <!-- Div 1 -->
+      <div class="card" id="a1">
+        <div class="h">Header</div>
+        <div class="b">Body</div>
+        <div class="f">Footer</div>
+      </div>
+      <!-- Div 2 -->
+      <div class="card" id="a2">
+        <div class="h">Header</div>
+        <div class="b">
+          Body Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+          consequuntur esse.
+        </div>
+        <div class="f">Footer</div>
+      </div>
+      <!-- Div 1 -->
+      <div class="card">
+        <div class="h">Header</div>
+        <div class="b">Body</div>
+        <div class="f">Footer</div>
+      </div>
+    </section>
+  </body>
+</html>
