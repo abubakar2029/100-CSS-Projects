@@ -32,131 +32,153 @@
       .section {
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adding transition for transform and box-shadow */
       }
+      .card {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
+      }
     </style>
   </head>
   <body>
-    <main class="grid bg-green-200 grid-cols-1 md:grid-cols-4 p-2 gap-5">
-      <!-- Section 1 -->
-      <section class="bg-purple-500 col-span-2 rounded p-6 section transform hover:scale-105 hover:shadow-lg">
-        <!-- Adding transitions for hover effects -->
-        <div class="grid grid-cols-9 items-center">
-          <img
-            src="./images/image-daniel.jpg"
-            alt=""
-            class="rounded-full text-white"
-          />
-          <div class="col-span-3">
-            <b>Daniel Clifford</b>
-            <p>Verified Graduate</p>
+    <main class="grid md:grid-cols-4 p-2 gap-2 bg-slate-200">
+      <section class="col-span-3 grid md:grid-cols-3 gap-2 grid-rows-3">
+        <!-- Section 1 -->
+        <section
+          class="bg-purple-500 md:col-span-2 rounded p-6 section transform hover:scale-90 hover:shadow-lg card"
+        >
+          <!-- Adding transitions for hover effects -->
+          <div class="grid grid-cols-9 items-center">
+            <img
+              src="./images/image-daniel.jpg"
+              alt=""
+              class="rounded-full text-white"
+            />
+            <div class="col-span-3">
+              <b>Daniel Clifford</b>
+              <p>Verified Graduate</p>
+            </div>
           </div>
-        </div>
-        <h2>
-          I received a job offer mid-course, and the subjects I learned were
-          current, if not more so, in the company I joined. I honestly feel I
-          got every penny’s worth.
-        </h2>
-        <p>
-          “ I was an EMT for many years before I joined the bootcamp. I’ve
-          been looking to make a transition and have heard some people who had
-          an amazing experience here. I signed up for the free intro course
-          and found it incredibly fun! I enrolled shortly thereafter. The next
-          12 weeks was the best - and most grueling - time of my life. Since
-          completing the course, I’ve successfully switched careers, working
-          as a Software Engineer at a VR startup. ”
-        </p>
-      </section>
+          <h2>
+            I received a job offer mid-course, and the subjects I learned were
+            current, if not more so, in the company I joined. I honestly feel I
+            got every penny’s worth.
+          </h2>
+          <p>
+            “ I was an EMT for many years before I joined the bootcamp. I’ve
+            been looking to make a transition and have heard some people who had
+            an amazing experience here. I signed up for the free intro course
+            and found it incredibly fun! I enrolled shortly thereafter. The next
+            12 weeks was the best - and most grueling - time of my life. Since
+            completing the course, I’ve successfully switched careers, working
+            as a Software Engineer at a VR startup. ”
+          </p>
+        </section>
 
-      <!-- Section 2 -->
-      <section class="bg-gray-300 rounded p-6 section transform hover:scale-105 hover:shadow-lg">
-        <div class="grid grid-cols-9 items-center">
-          <img src="./images/image-jeanette.jpg" alt="" />
-          <div class="col-span-6 pl-4">
-            <b>Jonathan Walters</b>
-            <p>Verified Graduate</p>
+        <!-- Section 2 -->
+        <section
+          class="bg-gray-300 rounded p-6 section transform hover:scale-90 hover:shadow-lg card"
+        >
+          <div class="grid grid-cols-9 items-center">
+            <img src="./images/image-jeanette.jpg" alt="" />
+            <div class="col-span-6 pl-4">
+              <b>Jonathan Walters</b>
+              <p>Verified Graduate</p>
+            </div>
           </div>
-        </div>
-        <h2>The team was very supportive and kept me motivated</h2>
-        <p>
-          “ I started as a total newbie with virtually no coding skills. I now
-          work as a mobile engineer for a big company. This was one of the
-          best investments I’ve made in myself. ”
-        </p>
-      </section>
+          <h2>The team was very supportive and kept me motivated</h2>
+          <p>
+            “ I started as a total newbie with virtually no coding skills. I now
+            work as a mobile engineer for a big company. This was one of the
+            best investments I’ve made in myself. ”
+          </p>
+        </section>
 
-      <!-- Section 3 -->
-      <section class="bg-white row-span-2 rounded p-6 section transform hover:scale-105 hover:shadow-lg">
-        <div class="grid grid-cols-9 items-center">
-          <img src="./images/image-jonathan.jpg" alt="" />
-          <div class="col-span-6 pl-4">
-            <b>Jonathan Walters</b>
-            <p>Verified Graduate</p>
+        <!-- Section 4 -->
+        <section
+          class="bg-white rounded p-6 section transform hover:scale-90 hover:shadow-lg card"
+        >
+          <div class="grid grid-cols-9 items-center">
+            <img src="./images/image-kira.jpg" alt="" />
+            <div class="col-span-6 pl-4">
+              <b>Jonathan Walters</b>
+              <p>Verified Graduate</p>
+            </div>
           </div>
-        </div>
-        <h2>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
-          facere autem maiores quas. Officia, ad.
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          voluptatem ad alias nemo quasi dolores blanditiis exercitationem
-          excepturi voluptatibus praesentium! Ex soluta sed sapiente quas
-          voluptatum, a magni illo adipisci praesentium iure quisquam tenetur
-          rerum, nobis ducimus eius eos porro, delectus dolorum molestias at
-          quod iusto nulla totam excepturi. Et perferendis distinctio beatae
-          ipsam tenetur numquam architecto rerum. Cumque, natus.
-        </p>
-      </section>
+          <h2>
+            I now have a job I really enjoy, and make a good living while doing
+            something I love. ”
+          </h2>
+          <p>
+            “ I started as a total newbie with virtually no coding skills. I now
+            work as a mobile engineer for a big company. This was one of the
+            best investments I’ve made in myself. ”
+          </p>
+        </section>
 
-      <!-- Section 4 -->
-      <section class="bg-white rounded p-6 section transform hover:scale-105 hover:shadow-lg">
-        <div class="grid grid-cols-9 items-center">
-          <img src="./images/image-kira.jpg" alt="" />
-          <div class="col-span-6 pl-4">
-            <b>Jonathan Walters</b>
-            <p>Verified Graduate</p>
+        <!-- Section 5 -->
+        <section
+          class="bg-black text-white md:col-span-2 rounded p-6 section transform hover:scale-90 hover:shadow-lg card"
+        >
+          <div class="grid grid-cols-9 items-center">
+            <img src="./images/image-patrick.jpg" alt="" />
+            <div class="col-span-3">
+              <b>Salazar Edison</b>
+              <p>Verified Graduate</p>
+            </div>
           </div>
-        </div>
-        <h2>
-          I now have a job I really enjoy, and make a good living while doing
-          something I love. ”
-        </h2>
-        <p>
-          “ I started as a total newbie with virtually no coding skills. I now
-          work as a mobile engineer for a big company. This was one of the
-          best investments I’ve made in myself. ”
-        </p>
+          <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            suscipit cupiditate eaque reprehenderit quidem rem non laborum
+            corrupti nemo voluptatem velit eos, at, recusandae quam hic ad quae
+            placeat vitae?
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+            necessitatibus numquam nesciunt libero ipsum minima ratione dicta
+            atque, saepe accusantium similique repellat, eligendi beatae.
+            Doloremque voluptatem deserunt ab eveniet, blanditiis ipsa! Neque
+            magni eaque soluta rem cum. Itaque veniam vitae provident sunt
+            repellat soluta, ut ipsa facilis quidem animi praesentium?
+          </p>
+        </section>
       </section>
-
-      <!-- Section 5 -->
-      <section class="bg-black text-white col-span-2 rounded p-6 section transform hover:scale-105 hover:shadow-lg">
-        <div class="grid grid-cols-9 items-center">
-          <img src="./images/image-patrick.jpg" alt="" />
-          <div class="col-span-3">
-            <b>Salazar Edison</b>
-            <p>Verified Graduate</p>
+      <aside>
+        <!-- Section 3 -->
+        <section
+          class="bg-white row-span-2 rounded p-6 section transform hover:scale-90 hover:shadow-lg"
+        >
+          <div class="grid grid-cols-9 items-center">
+            <img src="./images/image-jonathan.jpg" alt="" />
+            <div class="col-span-6 pl-4">
+              <b>Jonathan Walters Goerge</b>
+              <p>Verified Graduate</p>
+            </div>
           </div>
-        </div>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi suscipit
-          cupiditate eaque reprehenderit quidem rem non laborum corrupti nemo
-          voluptatem velit eos, at, recusandae quam hic ad quae placeat vitae?
-        </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          necessitatibus numquam nesciunt libero ipsum minima ratione dicta
-          atque, saepe accusantium similique repellat, eligendi beatae.
-          Doloremque voluptatem deserunt ab eveniet, blanditiis ipsa! Neque
-          magni eaque soluta rem cum. Itaque veniam vitae provident sunt
-          repellat soluta, ut ipsa facilis quidem animi praesentium?
-        </p>
-      </section>
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </div>
+          <h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequatur facere autem maiores quas. Officia, ad.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            voluptatem ad alias nemo quasi dolores blanditiis exercitationem
+            excepturi voluptatibus praesentium! Ex soluta sed sapiente quas
+            voluptatum, a magni illo adipisci praesentium iure quisquam tenetur
+            rerum, nobis ducimus eius eos porro, delectus dolorum molestias at
+            quod iusto nulla totlore Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Quidem nesciunt deleniti tenetur suscipit possimus
+            sapiente architecto ex, nostrum odio sequi sint debitis maiores
+            maxime accusantium, cupiditate dolores? Nisi, illo ipsum!am
+            excepturi. Et perferendis distinctio beatae ipsam tenetur numquam
+            architecto rerum. Cumque, natus.
+          </p>
+        </section>
+      </aside>
     </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Abu Bakar</a>.
+    </div>
   </body>
 </html>
